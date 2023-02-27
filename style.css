@@ -1,0 +1,43 @@
+/* import */
+@import "game_rule.css";
+@import "game_container.css";
+@import "score.css";
+
+/* font - "Press Start 2P", sans-serif; */
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+@font-face {
+	font-family: "NeoDunggeunmo";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* css variable */
+:root {
+	--main-color-beige: #f5eddc;
+	--main-color-gray: #cfd2cf;
+	--main-color-teal: #a2b5bb;
+	--main-color-red: #eb1d36;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
+	position: relative;
+}
+
+/* game background */
+body {
+	background-image: url(".././img/back.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/* 닫기버튼 누르면 .game-rule에 추가 */
+.invisible {
+	display: none;
+}

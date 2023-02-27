@@ -1,0 +1,74 @@
+.game-container {
+	grid-column: 2 / 4;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* opportunity */
+.opportunity {
+	color: white;
+	font-size: 3rem;
+	position: absolute;
+	top: 10rem;
+	left: 10rem;
+}
+
+/* green dice */
+.dice-div {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	position: absolute;
+	top: 300px;
+}
+
+.green-dice {
+	width: 150px;
+	height: 150px;
+	margin-right: 30px;
+}
+
+.green-dice:hover {
+	cursor: pointer;
+}
+
+.green-dice:active {
+	transform: translate(2px, 2px);
+}
+
+.selected-dice {
+	transform: scale(50%);
+}
+
+/* button  */
+.btn-container {
+	position: fixed;
+	top: 0;
+	right: 10px;
+}
+
+.btn {
+	width: 130px;
+	height: auto;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn:active {
+	transform: translate(2px, 2px);
+}
+
+.roll {
+	position: absolute;
+	top: 14rem;
+	left: 20rem;
+}
+.submit {
+	position: absolute;
+	top: 14rem;
+	left: 38rem;
+}

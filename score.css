@@ -1,0 +1,95 @@
+main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-family: "Press Start 2P", sans-serif;
+}
+
+.score-container {
+	grid-column: 1/2;
+	width: 100%;
+	height: 100%;
+}
+
+table {
+	width: 100%;
+	height: 100%;
+	border: 10px solid var(--main-color-teal);
+	background-color: var(--main-color-teal);
+}
+
+th,
+td {
+	width: 100px;
+	height: 50px;
+	font-size: 1.5rem;
+}
+
+th {
+	padding: 5px;
+	background-color: var(--main-color-gray);
+}
+
+.category {
+	font-size: 1.5rem;
+	padding-left: 10px;
+	background-color: var(--main-color-gray);
+}
+
+tbody tr td {
+	background-color: white;
+}
+
+.small-dice {
+	width: 2rem;
+	height: 2rem;
+	margin-right: 5px;
+}
+
+.player0,
+.player1 {
+	text-align: center;
+}
+
+.score-color {
+	background-color: rgb(250, 250, 70);
+}
+
+.no-click {
+	pointer-events: none;
+}
+
+.gray {
+	background-color: var(--main-color-gray);
+	font-size: 1.6rem;
+	text-align: right;
+	padding-right: 0.7rem;
+}
+
+.who_turn {
+	animation: blink2 2s infinite linear;
+}
+
+.player0:not(.gray):hover,
+.player1:not(.gray):hover {
+	animation: blink1 1s infinite linear;
+	cursor: pointer;
+}
+
+/* 점수표 깜박임 */
+@keyframes blink1 {
+	to {
+		background-color: white;
+	}
+	from {
+		background-color: rgb(249, 249, 3);
+	}
+}
+
+@keyframes blink2 {
+	to {
+		background-color: white;
+	}
+	from {
+		background-color: darkorange;
+	}
+} ;

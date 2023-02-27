@@ -1,0 +1,54 @@
+.game-rule {
+	width: 80%;
+	height: 90%;
+	background-image: url("../img/block1.png");
+	background-size: 400px;
+	background-repeat: repeat;
+	color: var(--main-color-beige);
+	margin: 0 auto;
+	font-family: "NeoDunggeunmo";
+	position: relative;
+	display: flex;
+	place-items: center;
+	flex-direction: column;
+	padding: 0 2rem;
+	position: fixed;
+	top: 5%;
+	left: 10%;
+	overflow: scroll;
+	z-index: 10;
+}
+
+.game-rule--title {
+	font-size: 5rem;
+	margin: 4rem 0;
+}
+
+.game-rule--list {
+	width: 70%;
+	height: auto;
+}
+
+.game-rule--list ol li {
+	font-size: 2.4rem;
+	margin-bottom: 2.5rem;
+	line-height: 2.8rem;
+}
+
+.game-rule--list ol li:hover {
+	color: rgb(207, 237, 131);
+}
+
+#close-btn {
+	display: block;
+	font-size: 2.8rem;
+	color: white;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+#close-btn:hover {
+	cursor: pointer;
+	transform: translate(3px, 3px);
+}
